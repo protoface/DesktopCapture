@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Allgemeine Informationen über eine Assembly werden über die folgenden
 // Attribute gesteuert. Ändern Sie diese Attributwerte, um die Informationen zu ändern,
 // die einer Assembly zugeordnet sind.
-[assembly: AssemblyTitle("DesktopDuplication")]
+[assembly: AssemblyTitle("DesktopCapture")]
 [assembly: AssemblyDescription("Easy to use screen capture library")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("protoface")]
-[assembly: AssemblyProduct("DesktopDuplication")]
+[assembly: AssemblyProduct("DesktopCapture")]
 [assembly: AssemblyCopyright("Copyright ©  2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

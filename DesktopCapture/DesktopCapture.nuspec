@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>protoface.DesktopCapture</id>
-    <version>1.0</version>
+    <version>1.0.1</version>
     <title>DesktopCapture</title>
     <authors>protoface</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
