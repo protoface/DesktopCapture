@@ -9,7 +9,7 @@ using Device = SharpDX.Direct3D11.Device;
 using Rectangle = System.Drawing.Rectangle;
 using Resource = SharpDX.DXGI.Resource;
 
-namespace DesktopDuplication
+namespace DesktopCapture
 {
 
 	/// <summary>

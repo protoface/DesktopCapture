@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.Serialization;
 
-namespace DesktopDuplication
+namespace DesktopCapture
 {
 	[Serializable]
 	public class DesktopDuplicationException : Exception
