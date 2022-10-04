@@ -2,15 +2,19 @@
 <package >
   <metadata>
     <id>protoface.DesktopCapture</id>
-    <version>1.0.1</version>
+    <version>1.0.3</version>
     <title>DesktopCapture</title>
     <authors>protoface</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">MIT</license>
     <projectUrl>https://github.com/protoface/DesktopCapture</projectUrl>
-    <description>A easy to use screen capture library. No setup required. (Windows-only)</description>
-    <releaseNotes>Initial release</releaseNotes>
+    <description>A easy-to-use screen capture library. No setup required. (Windows-only)</description>
+    <releaseNotes>Added Readme</releaseNotes>
     <copyright>Copyright 2022</copyright>
     <tags>Capture Recording Image Screenshot Desktop Screen</tags>
+    <readme>README.md</readme>
   </metadata>
+  <files>
+    <file src="..\README.md" target="\" />
+  </files>
 </package>
