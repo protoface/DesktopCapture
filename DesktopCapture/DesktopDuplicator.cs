@@ -26,7 +26,7 @@ namespace DesktopCapture
 		Rectangle boundsRect, halfBoundsRect;
 
 
-		public DesktopDuplicator(int graphicsCard = 0, int output = 0)
+		public DesktopDuplicator(int graphicsCard = 0, int outputIndex = 0)
 		{
 			Adapter1 adapter;
 			try
@@ -41,7 +41,7 @@ namespace DesktopCapture
 			Output output;
 			try
 			{
-				output = adapter.GetOutput(outputFromGraphicsCard);
+				output = adapter.GetOutput(outputIndex);
 			}
 			catch (SharpDXException ex)
 			{
