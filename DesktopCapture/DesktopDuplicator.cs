@@ -26,7 +26,7 @@ namespace DesktopCapture
 		Rectangle boundsRect, halfBoundsRect;
 
 
-		public DesktopDuplicator(int graphicsCard = 0, int outputFromGraphicsCard = 0)
+		public DesktopDuplicator(int graphicsCard = 0, int output = 0)
 		{
 			Adapter1 adapter;
 			try
