@@ -11,11 +11,7 @@ using DesktopCapture;
 
 DesktopDuplicator dd = new();
 
-while(true){
-    Bitmap bmp = dd.GetLatestFrame(out bool isNew);
-
-    // do stuff
-}
+Bitmap bmp = dd.GetLatestFrame(out bool isNew);
 
 
 ```

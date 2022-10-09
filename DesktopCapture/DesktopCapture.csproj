@@ -1,67 +1,70 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
-  <PropertyGroup>
-	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-	<ProjectGuid>{24D33BC6-7392-4BD0-9025-A038D3C0E917}</ProjectGuid>
-	<OutputType>Library</OutputType>
-	<AppDesignerFolder>Properties</AppDesignerFolder>
-	<RootNamespace>DesktopCapture</RootNamespace>
-	<AssemblyName>DesktopCapture</AssemblyName>
-	<TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
-	<LangVersion>preview</LangVersion>
-	<FileAlignment>512</FileAlignment>
-	<Deterministic>true</Deterministic>
-	<TargetFrameworkProfile />
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-	<DebugSymbols>true</DebugSymbols>
-	<DebugType>embedded</DebugType>
-	<Optimize>false</Optimize>
-	<OutputPath>bin\Debug\</OutputPath>
-	<DefineConstants>DEBUG;TRACE</DefineConstants>
-	<ErrorReport>prompt</ErrorReport>
-	<WarningLevel>4</WarningLevel>
-	<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-	<DebugType>embedded</DebugType>
-	<Optimize>true</Optimize>
-	<OutputPath>bin\Release\</OutputPath>
-	<DefineConstants>TRACE</DefineConstants>
-	<ErrorReport>prompt</ErrorReport>
-	<WarningLevel>4</WarningLevel>
-	<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-	<DebugSymbols>true</DebugSymbols>
-  </PropertyGroup>
-  <ItemGroup>
-	<Reference Include="SharpDX, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
-	  <HintPath>..\packages\SharpDX.4.2.0\lib\net45\SharpDX.dll</HintPath>
-	</Reference>
-	<Reference Include="SharpDX.Direct3D11, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
-	  <HintPath>..\packages\SharpDX.Direct3D11.4.2.0\lib\net45\SharpDX.Direct3D11.dll</HintPath>
-	</Reference>
-	<Reference Include="SharpDX.DXGI, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
-	  <HintPath>..\packages\SharpDX.DXGI.4.2.0\lib\net45\SharpDX.DXGI.dll</HintPath>
-	</Reference>
-	<Reference Include="System" />
-	<Reference Include="System.Core" />
-	<Reference Include="System.Drawing" />
-	<Reference Include="System.Xml.Linq" />
-	<Reference Include="System.Data.DataSetExtensions" />
-	<Reference Include="Microsoft.CSharp" />
-	<Reference Include="System.Data" />
-	<Reference Include="System.Net.Http" />
-	<Reference Include="System.Xml" />
-  </ItemGroup>
-  <ItemGroup>
-	<Compile Include="DesktopDuplicationException.cs" />
-	<Compile Include="DesktopDuplicator.cs" />
-	<Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-	<None Include="packages.config" />
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+		<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+		<ProjectGuid>{24D33BC6-7392-4BD0-9025-A038D3C0E917}</ProjectGuid>
+		<OutputType>Library</OutputType>
+		<AppDesignerFolder>Properties</AppDesignerFolder>
+		<RootNamespace>DesktopCapture</RootNamespace>
+		<AssemblyName>DesktopCapture</AssemblyName>
+		<TargetFrameworks>net7.0; net481</TargetFrameworks>
+		<LangVersion>preview</LangVersion>
+		<FileAlignment>512</FileAlignment>
+		<Deterministic>true</Deterministic>
+		<DebugType>embedded</DebugType>
+		<ErrorReport>prompt</ErrorReport>
+		<WarningLevel>4</WarningLevel>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<AllowPublish>true</AllowPublish>
+		<DebugSymbols>true</DebugSymbols>
+		<Prefer32Bit>false</Prefer32Bit>
+		<ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+		<PackageId>protoface.DesktopCapture</PackageId>
+		<Title>DesktopCapture</Title>
+		<Authors>protoface</Authors>
+		<Description>A easy-to-use screen capture library. No setup required. (Windows-only)</Description>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageProjectUrl>https://github.com/protoface/DesktopCapture</PackageProjectUrl>
+		<Copyright>Copyright 2022</Copyright>
+		<PackageTags>Capture Recording Image Screenshot Desktop Screen</PackageTags>
+		<PackageReleaseNotes>Migrated to newer .Net versions</PackageReleaseNotes>
+		<EnforceCodeStyleInBuild>False</EnforceCodeStyleInBuild>
+		<RepositoryUrl>https://github.com/protoface/DesktopCapture</RepositoryUrl>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+		<Optimize>false</Optimize>
+		<OutputPath>bin\Debug\</OutputPath>
+		<DefineConstants>DEBUG;TRACE</DefineConstants>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+		<Optimize>true</Optimize>
+		<OutputPath>bin\Release\</OutputPath>
+		<DefineConstants>TRACE</DefineConstants>
+	</PropertyGroup>
+	<ItemGroup>
+		<None Include="..\README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="packages.config" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="System.Drawing.Common" Version="6.0.0" />
+	</ItemGroup>
+	<ItemGroup>
+		<Reference Include="SharpDX">
+			<HintPath>lib\SharpDX.dll</HintPath>
+		</Reference>
+		<Reference Include="SharpDX.Direct3D11">
+			<HintPath>lib\SharpDX.Direct3D11.dll</HintPath>
+		</Reference>
+		<Reference Include="SharpDX.DXGI">
+			<HintPath>lib\SharpDX.DXGI.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition=" '$(Configuration)' == 'Release' ">
+		<Exec Command="dotnet pack --no-build -c Release -p:NuspecFile=DesktopCapture.nuspec" />
+	</Target>
 </Project>
