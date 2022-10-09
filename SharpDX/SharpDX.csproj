@@ -1,0 +1,79 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<!--Project was exported from assembly: C:\Users\felix\source\repos\PcPlaner3.0\PcPlaner_Server\bin\Release\net7.0-windows\win-x64\publish\SharpDX.dll-->
+	<PropertyGroup>
+		<Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+		<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+		<ProjectGuid>{0FC0DE5A-4D21-4D17-9E7B-E1D0795A0F64}</ProjectGuid>
+		<OutputType>Library</OutputType>
+		<AssemblyName>SharpDX</AssemblyName>
+		<ApplicationVersion>4.2.0.0</ApplicationVersion>
+		<RootNamespace>SharpDX</RootNamespace>
+		<LangVersion>preview</LangVersion>
+		<TargetFrameworks>net6.0; net7.0; net481</TargetFrameworks>
+		<DebugType>embedded</DebugType>
+		<TargetFrameworkProfile />
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+		<PlatformTarget>AnyCPU</PlatformTarget>
+		<DebugSymbols>true</DebugSymbols>
+		<DebugType>full</DebugType>
+		<Optimize>false</Optimize>
+		<OutputPath>bin\Debug\</OutputPath>
+		<DefineConstants>TRACE</DefineConstants>
+		<ErrorReport>prompt</ErrorReport>
+		<WarningLevel>9999</WarningLevel>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<Prefer32Bit>false</Prefer32Bit>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+		<PlatformTarget>AnyCPU</PlatformTarget>
+		<DebugType>embedded</DebugType>
+		<Optimize>true</Optimize>
+		<OutputPath>bin\Release\</OutputPath>
+		<DefineConstants>TRACE</DefineConstants>
+		<ErrorReport>prompt</ErrorReport>
+		<WarningLevel>9999</WarningLevel>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<Prefer32Bit>false</Prefer32Bit>
+		<DebugSymbols>true</DebugSymbols>
+	</PropertyGroup>
+	<!--<ItemGroup>
+	<Reference Include="System" />
+	<Reference Include="System.Core" />
+	<Reference Include="Microsoft.CSharp" />
+  </ItemGroup>-->
+	<!--<ItemGroup>
+	<Compile Include="ComObject.cs" />
+	<Compile Include="ComObjectShadow.cs" />
+	<Compile Include="Configuration.cs" />
+	<Compile Include="CppObject.cs" />
+	<Compile Include="CppObjectShadow.cs" />
+	<Compile Include="DataBox.cs" />
+	<Compile Include="DisposeBase.cs" />
+	<Compile Include="DisposeEventArgs.cs" />
+	<Compile Include="ICallbackable.cs" />
+	<Compile Include="IInspectable.cs" />
+	<Compile Include="InspectableShadow.cs" />
+	<Compile Include="Interop.cs" />
+	<Compile Include="IUnknown.cs" />
+	<Compile Include="ModuleInit.cs" />
+	<Compile Include="Result.cs" />
+	<Compile Include="ResultDescriptor.cs" />
+	<Compile Include="ShadowAttribute.cs" />
+	<Compile Include="ShadowContainer.cs" />
+	<Compile Include="SharpDXException.cs" />
+	<Compile Include="TagAttribute.cs" />
+	<Compile Include="Utilities.cs" />
+	<Compile Include="Mathematics\Interop\RawBool.cs" />
+	<Compile Include="Mathematics\Interop\RawPoint.cs" />
+	<Compile Include="Mathematics\Interop\RawRectangle.cs" />
+	<Compile Include="Direct3D\DriverType.cs" />
+	<Compile Include="Direct3D\FeatureLevel.cs" />
+	<Compile Include="Diagnostics\ObjectReference.cs" />
+	<Compile Include="Diagnostics\ComObjectEventArgs.cs" />
+	<Compile Include="Diagnostics\ObjectTracker.cs" />
+	<Compile Include="Collections\EqualityComparer.cs" />
+	<Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>-->
+	<!--<Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />-->
+</Project>

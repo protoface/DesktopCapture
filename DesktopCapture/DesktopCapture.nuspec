@@ -2,7 +2,7 @@
 <package >
 	<metadata>
 		<id>protoface.DesktopCapture</id>
-		<version>1.1.0</version>
+		<version>1.1.1</version>
 		<title>DesktopCapture</title>
 		<authors>protoface</authors>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -24,6 +24,11 @@
 		<file src="bin\Release\net7.0\SharpDX.Direct3D11.dll" target="lib\net7.0\" />
 		<file src="bin\Release\net7.0\SharpDX.DXGI.dll" target="lib\net7.0\" />
 		<file src="bin\Release\net7.0\DesktopCapture.dll" target="lib\net7.0\" />
+
+		<file src="bin\Release\net6.0\SharpDX.dll" target="lib\net6.0\" />
+		<file src="bin\Release\net6.0\SharpDX.Direct3D11.dll" target="lib\net6.0\" />
+		<file src="bin\Release\net6.0\SharpDX.DXGI.dll" target="lib\net6.0\" />
+		<file src="bin\Release\net6.0\DesktopCapture.dll" target="lib\net6.0\" />
 
 		<file src="bin\Release\net481\SharpDX.dll" target="lib\net481\" />
 		<file src="bin\Release\net481\SharpDX.Direct3D11.dll" target="lib\net481\" />

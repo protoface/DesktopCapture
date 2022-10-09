@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<!--Project was exported from assembly: C:\Users\felix\source\repos\PcPlaner3.0\PcPlaner_Server\bin\Release\net7.0-windows\win-x64\publish\SharpDX.DXGI.dll-->
+	<PropertyGroup>
+		<Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+		<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+		<ProjectGuid>{06B03F68-FE1D-4A8D-BC55-0F62ADD71A4E}</ProjectGuid>
+		<OutputType>Library</OutputType>
+		<AssemblyName>SharpDX.DXGI</AssemblyName>
+		<ApplicationVersion>4.2.0.0</ApplicationVersion>
+		<RootNamespace>SharpDX.DXGI</RootNamespace>
+		<LangVersion>preview</LangVersion>
+		<FileUpgradeFlags>
+		</FileUpgradeFlags>
+		<UpgradeBackupLocation>
+		</UpgradeBackupLocation>
+		<OldToolsVersion>2.0</OldToolsVersion>
+		<TargetFrameworks>net6.0; net7.0; net481</TargetFrameworks>
+		<TargetFrameworkProfile />
+		<DebugType>embedded</DebugType>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+		<PlatformTarget>AnyCPU</PlatformTarget>
+		<DebugSymbols>true</DebugSymbols>
+		<DebugType>full</DebugType>
+		<Optimize>false</Optimize>
+		<OutputPath>bin\Debug\</OutputPath>
+		<DefineConstants>DEBUG;TRACE</DefineConstants>
+		<ErrorReport>prompt</ErrorReport>
+		<WarningLevel>9999</WarningLevel>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<Prefer32Bit>false</Prefer32Bit>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+		<PlatformTarget>AnyCPU</PlatformTarget>
+		<DebugType>embedded</DebugType>
+		<Optimize>true</Optimize>
+		<OutputPath>bin\Release\</OutputPath>
+		<DefineConstants>TRACE</DefineConstants>
+		<ErrorReport>prompt</ErrorReport>
+		<WarningLevel>9999</WarningLevel>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<Prefer32Bit>false</Prefer32Bit>
+		<DebugSymbols>true</DebugSymbols>
+	</PropertyGroup>
+	<PropertyGroup>
+		<AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+	</PropertyGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\SharpDX\SharpDX.csproj" />
+	</ItemGroup>
+</Project>

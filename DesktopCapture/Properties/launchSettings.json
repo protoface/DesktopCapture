@@ -1,0 +1,13 @@
+{
+	"profiles": {
+		"DesktopCapture": {
+			"commandName": "Project"
+		},
+		"Pack Nuget": {
+			"commandName": "Executable",
+			"executablePath": "dotnet",
+			"commandLineArgs": "pack DesktopCapture.csproj -c Release -p:NuspecFile=DesktopCapture.nuspec",
+			"workingDirectory": "."
+		}
+	}
+}

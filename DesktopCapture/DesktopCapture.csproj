@@ -7,13 +7,12 @@
 		<AppDesignerFolder>Properties</AppDesignerFolder>
 		<RootNamespace>DesktopCapture</RootNamespace>
 		<AssemblyName>DesktopCapture</AssemblyName>
-		<TargetFrameworks>net7.0; net481</TargetFrameworks>
+		<TargetFrameworks>net6.0; net7.0; net481</TargetFrameworks>
 		<LangVersion>preview</LangVersion>
 		<FileAlignment>512</FileAlignment>
 		<Deterministic>true</Deterministic>
 		<DebugType>embedded</DebugType>
 		<ErrorReport>prompt</ErrorReport>
-		<WarningLevel>4</WarningLevel>
 		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 		<AllowPublish>true</AllowPublish>
 		<DebugSymbols>true</DebugSymbols>
@@ -29,7 +28,6 @@
 		<PackageProjectUrl>https://github.com/protoface/DesktopCapture</PackageProjectUrl>
 		<Copyright>Copyright 2022</Copyright>
 		<PackageTags>Capture Recording Image Screenshot Desktop Screen</PackageTags>
-		<PackageReleaseNotes>Migrated to newer .Net versions</PackageReleaseNotes>
 		<EnforceCodeStyleInBuild>False</EnforceCodeStyleInBuild>
 		<RepositoryUrl>https://github.com/protoface/DesktopCapture</RepositoryUrl>
 	</PropertyGroup>
@@ -54,17 +52,8 @@
 		<PackageReference Include="System.Drawing.Common" Version="6.0.0" />
 	</ItemGroup>
 	<ItemGroup>
-		<Reference Include="SharpDX">
-			<HintPath>lib\SharpDX.dll</HintPath>
-		</Reference>
-		<Reference Include="SharpDX.Direct3D11">
-			<HintPath>lib\SharpDX.Direct3D11.dll</HintPath>
-		</Reference>
-		<Reference Include="SharpDX.DXGI">
-			<HintPath>lib\SharpDX.DXGI.dll</HintPath>
-		</Reference>
+		<ProjectReference Include="..\SharpDX\SharpDX.csproj" />
+		<ProjectReference Include="..\SharpDX.Direct3D11\SharpDX.Direct3D11.csproj" />
+		<ProjectReference Include="..\SharpDX.DXGI\SharpDX.DXGI.csproj" />
 	</ItemGroup>
-	<Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition=" '$(Configuration)' == 'Release' ">
-		<Exec Command="dotnet pack --no-build -c Release -p:NuspecFile=DesktopCapture.nuspec" />
-	</Target>
 </Project>

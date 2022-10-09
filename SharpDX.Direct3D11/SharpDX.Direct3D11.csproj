@@ -1,0 +1,55 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<!--Project was exported from assembly: C:\Users\felix\source\repos\PcPlaner3.0\PcPlaner_Server\bin\Release\net7.0-windows\win-x64\publish\SharpDX.Direct3D11.dll-->
+	<PropertyGroup>
+		<Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+		<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+		<ProjectGuid>{28B0AF36-91C5-418F-825F-DC24ED4ABDFD}</ProjectGuid>
+		<OutputType>Library</OutputType>
+		<AssemblyName>SharpDX.Direct3D11</AssemblyName>
+		<ApplicationVersion>4.2.0.0</ApplicationVersion>
+		<RootNamespace>SharpDX.Direct3D11</RootNamespace>
+		<LangVersion>preview</LangVersion>
+		<FileUpgradeFlags>
+		</FileUpgradeFlags>
+		<UpgradeBackupLocation>
+		</UpgradeBackupLocation>
+		<OldToolsVersion>2.0</OldToolsVersion>
+		<TargetFrameworks>net6.0; net7.0; net481</TargetFrameworks>
+		<DebugType>embedded</DebugType>
+		<TargetFrameworkProfile />
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+		<PlatformTarget>AnyCPU</PlatformTarget>
+		<DebugSymbols>true</DebugSymbols>
+		<DebugType>full</DebugType>
+		<Optimize>false</Optimize>
+		<OutputPath>bin\Debug\</OutputPath>
+		<DefineConstants>DEBUG;TRACE</DefineConstants>
+		<ErrorReport>prompt</ErrorReport>
+		<WarningLevel>9999</WarningLevel>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<Prefer32Bit>false</Prefer32Bit>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+		<PlatformTarget>AnyCPU</PlatformTarget>
+		<DebugType>embedded</DebugType>
+		<Optimize>true</Optimize>
+		<OutputPath>bin\Release\</OutputPath>
+		<DefineConstants>TRACE</DefineConstants>
+		<ErrorReport>prompt</ErrorReport>
+		<WarningLevel>9999</WarningLevel>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<Prefer32Bit>false</Prefer32Bit>
+		<DebugSymbols>true</DebugSymbols>
+	</PropertyGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\SharpDX\SharpDX.csproj">
+			<Project>{0fc0de5a-4d21-4d17-9e7b-e1d0795a0f64}</Project>
+			<Name>SharpDX</Name>
+		</ProjectReference>
+		<ProjectReference Include="..\SharpDX.DXGI\SharpDX.DXGI.csproj">
+			<Project>{06b03f68-fe1d-4a8d-bc55-0f62add71a4e}</Project>
+			<Name>SharpDX.DXGI</Name>
+		</ProjectReference>
+	</ItemGroup>
+</Project>
