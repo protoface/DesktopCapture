@@ -1,6 +1,7 @@
 # DesktopCapture
 
 ![Nuget](https://img.shields.io/nuget/dt/protoface.DesktopCapture)
+![Nuget](https://img.shields.io/nuget/v/protoface.DesktopCapture)
 
 A easy-to-use library to efficiently record a screen (Windows-only)
 
